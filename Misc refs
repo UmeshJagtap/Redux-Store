@@ -1,0 +1,19 @@
+Links :-
+Learn Redux Toolkit in one video 🔥🔥🚀 ( Hindi )
+https://www.youtube.com/watch?v=XwGNhppX4as
+https://github.com/codersgyan/redux-shopping-cart/blob/main/src/index.css
+
+Terminal :-
+$ node -v
+$ npm create vite@latest
+√ Project name: ... reduxStore
+√ Package name: ... reduxstore
+√ Select a framework: » React
+√ Select a variant: » JavaScript
+$ npm install
+$ npm run dev
+
+Local: http://127.0.0.1:5173/
+
+$ ls
+npm install react-router-dom localforage match-sorter sort-by
