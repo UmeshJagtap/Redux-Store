@@ -1,3 +1,6 @@
+// ------------------------------------------------------------------------
+For reduxStore :-
+
 Links :-
 Learn Redux Toolkit in one video 🔥🔥🚀 ( Hindi )
 https://www.youtube.com/watch?v=XwGNhppX4as
@@ -17,3 +20,13 @@ Local: http://127.0.0.1:5173/
 
 $ ls
 npm install react-router-dom localforage match-sorter sort-by
+
+
+// ------------------------------------------------------------------------
+For reduxToolkit-SimpleCounterApp :-
+
+npm i react-redux
+
+npm i @reduxjs/toolkit
+
+https://stackblitz.com/edit/react-izny8e?file=src%2Fstore%2FcounterSlice.js,src%2Fstore%2Findex.js,src%2FCounter.js
