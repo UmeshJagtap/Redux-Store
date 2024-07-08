@@ -21,7 +21,6 @@ Local: http://127.0.0.1:5173/
 $ ls
 npm install react-router-dom localforage match-sorter sort-by
 
-
 // ------------------------------------------------------------------------
 For reduxToolkit-SimpleCounterApp :-
 

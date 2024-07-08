@@ -1,3 +1,22 @@
+import React from 'react';
+import './App.css';
+import { store } from './store';
+import { Provider } from 'react-redux';
+import Counter from './Counter';
+
+export default function App() {
+  return (
+    <>
+      <Provider store={store}>
+        <div className="app-container">
+          <h1>Redux Counter App!</h1>
+          <Counter></Counter>
+        </div>
+      </Provider>
+    </>
+  );
+}
+
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
@@ -33,24 +52,3 @@
 // }
 
 // export default App
-
-
-
-import React from 'react';
-import './App.css';
-import { store } from './store';
-import { Provider } from 'react-redux';
-import Counter from './Counter';
-
-export default function App() {
-  return (
-    <>
-      <Provider store={store}>
-        <div>
-          <h1>Redux Counter App!</h1>
-          <Counter></Counter>
-        </div>
-      </Provider>
-    </>
-  )
-}
