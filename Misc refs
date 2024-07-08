@@ -29,3 +29,11 @@ npm i react-redux
 npm i @reduxjs/toolkit
 
 https://stackblitz.com/edit/react-izny8e?file=src%2Fstore%2FcounterSlice.js,src%2Fstore%2Findex.js,src%2FCounter.js
+
+// ------------------------------------------------------------------------ Other API
+https://fakestoreapi.com/products
+https://jsonplaceholder.typicode.com/
+
+https://api.thecatapi.com/v1/images/search?limit=10
+https://dog.ceo/api/breeds/image/random
+https://www.reddit.com/r/blender.json
