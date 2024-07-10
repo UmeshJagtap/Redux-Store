@@ -1,14 +1,15 @@
 REDUX :-
 Alternative to useContext
-To avoid prop drilling, passing data to nested components..
+To avoid prop drilling, i.e. passing data to nested components..
 When to use Redux, if our state is being used in multiple components
 
 // ------------------------------------------------------------------------
 For reduxStore :-
+// ------------------------------------------------------------------------
 
 Links :-
 Learn Redux Toolkit in one video 🔥🔥🚀 ( Hindi )
-https://www.youtube.com/watch?v=XwGNhppX4as
+https://www.youtube.com/watch?v=XwGNhppX4as [1:01:47]
 https://github.com/codersgyan/redux-shopping-cart/blob/main/src/index.css
 
 Terminal :-
@@ -29,8 +30,13 @@ npm install react-router-dom localforage match-sorter sort-by
 $ npm install @reduxjs/toolkit
 $ npm install react-redux
 
+As of now fecthing is done in Product Component,
+we can API-dataFetch from store as well !!, if API-data is needed in other components
+this can be accomplished using 'productSlice'
+
 // ------------------------------------------------------------------------
 For reduxToolkit-SimpleCounterApp :-
+// ------------------------------------------------------------------------
 
 npm i react-redux
 
@@ -38,7 +44,10 @@ npm i @reduxjs/toolkit
 
 https://stackblitz.com/edit/react-izny8e?file=src%2Fstore%2FcounterSlice.js,src%2Fstore%2Findex.js,src%2FCounter.js
 
-// ------------------------------------------------------------------------ Other API
+// ------------------------------------------------------------------------
+Other API
+// ------------------------------------------------------------------------
+
 https://fakestoreapi.com/products
 https://jsonplaceholder.typicode.com/
 
