@@ -1,3 +1,3 @@
 # Redux-Store
 
-eComm Store with Redux
+eComm Store with Redux Toolkit
