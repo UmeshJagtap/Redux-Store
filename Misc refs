@@ -1,3 +1,8 @@
+REDUX :-
+Alternative to useContext
+To avoid prop drilling, passing data to nested components..
+When to use Redux, if our state is being used in multiple components
+
 // ------------------------------------------------------------------------
 For reduxStore :-
 
@@ -20,6 +25,9 @@ Local: http://127.0.0.1:5173/
 
 $ ls
 npm install react-router-dom localforage match-sorter sort-by
+
+$ npm install @reduxjs/toolkit
+$ npm install react-redux
 
 // ------------------------------------------------------------------------
 For reduxToolkit-SimpleCounterApp :-

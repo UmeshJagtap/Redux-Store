@@ -1,7 +1,9 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { add } from '../store/cartSlice';
 
 const Products = () => {
+  const dispatch = useDispatch();
   const [products, setProducts] = useState([]);
 
   const fetchProducts = async () => {
@@ -11,42 +13,26 @@ const Products = () => {
     setProducts(data);
   };
 
-  // useEffect(() => {
-  //   fetchProducts();
-  // }, []);
-
-  function handleFetch() {
+  useEffect(() => {
     fetchProducts();
-  }
+  }, []);
 
+  const handleAdd = (product) => {
+    dispatch(add(product));
+  };
   // return <div>Products</div>;
   return (
-    <div className="flex justify-center align-center ">
-      <div
-        style={{
-          width: '1200px',
-          padding: '20px',
-          margin: '20px',
-          border: '1px solid red',
-        }}
-      >
-        <p>Start editing to see some magic happen :)</p>
-        <p>Data Fecthing via an API</p>
-        <button onClick={handleFetch}>FETCH PRODUCTS</button>
-      </div>
+    <div className="productsWrapper">
       {products.map((product) => {
         return (
-          <>
-            <h2>{product.title}</h2>
-            <p key={product.id}>{product.category}</p>
-            <img
-              src={product.image}
-              alt="product image"
-              style={{ width: '100px', border: '1px solid red' }}
-            />
-            <p>{product.price}</p>
-            <hr />
-          </>
+          <div className="card" key={product.id}>
+            <img src={product.image} alt="product image" />
+            <h4>{product.title}</h4>
+            <h5>{product.price}</h5>
+            <button onClick={() => handleAdd(product)} className="btn">
+              Add to cart
+            </button>
+          </div>
         );
       })}
     </div>
@@ -57,7 +43,67 @@ const Products = () => {
 
 export default Products;
 
-// TRY REDDIT API
+// FAKESTORE API  -----------------------------------------------------------
+
+// import React, { useState, useEffect } from 'react';
+
+// const Products = () => {
+//   const [products, setProducts] = useState([]);
+
+//   const fetchProducts = async () => {
+//     const res = await fetch('https://fakestoreapi.com/products');
+//     const data = await res.json();
+//     console.log(data);
+//     setProducts(data);
+//   };
+
+//   // useEffect(() => {
+//   //   fetchProducts();
+//   // }, []);
+
+//   function handleFetch() {
+//     fetchProducts();
+//   }
+
+//   // return <div>Products</div>;
+//   return (
+//     <div className="flex justify-center align-center ">
+//       <div
+//         style={{
+//           width: '1200px',
+//           padding: '20px',
+//           margin: '20px',
+//           border: '1px solid red',
+//         }}
+//       >
+//         <p>Start editing to see some magic happen :)</p>
+//         <p>Data Fecthing via an API</p>
+//         <button onClick={handleFetch}>FETCH PRODUCTS</button>
+//       </div>
+//       {products.map((product) => {
+//         return (
+//           <>
+//             <h2>{product.title}</h2>
+//             <p key={product.id}>{product.category}</p>
+//             <img
+//               src={product.image}
+//               alt="product image"
+//               style={{ width: '100px', border: '1px solid red' }}
+//             />
+//             <p>{product.price}</p>
+//             <hr />
+//           </>
+//         );
+//       })}
+//     </div>
+//   );
+
+//   return <h1>Loading...</h1>;
+// };
+
+// export default Products;
+
+// TRY REDDIT API  -----------------------------------------------------------
 //   const [posts, setPosts] = useState(null);
 //   const targetUrl = 'https://www.reddit.com/r/blender.json';
 

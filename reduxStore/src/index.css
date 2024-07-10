@@ -77,7 +77,7 @@ body {
   padding: 20px;
   background: whitesmoke;
 }
-img {
+.card > img {
   height: 80px;
 }
 .card {
@@ -129,4 +129,10 @@ img {
   margin-bottom: 20px;
   padding: 14px;
   border-radius: 5px;
+}
+.cartCard > img {
+  height: 4rem;
+}
+.cartWrapper {
+  height: 15vh;
 }
