@@ -12,11 +12,15 @@ Learn Redux Toolkit in one video 🔥🔥🚀 ( Hindi )
 https://www.youtube.com/watch?v=XwGNhppX4as [1:01:47]
 https://github.com/codersgyan/redux-shopping-cart/blob/main/src/index.css
 
+For reduxStore we can save the cart in localStorage / server
+
 Next Inspiration :-
 https://www.youtube.com/watch?v=Su6-hYhrRys ( React + Redux Toolkit E-commerce Cart Project In One Video || Complete Redux Toolkit In One Video )
 https://toolkitecommercecart.netlify.app/
 https://github.com/harsh17112000/reduxtoolkit_ecommercecart
 https://github.com/harsh17112000/react_redux_cart_youtube/tree/main/src/redux/reducers
+
+https://www.youtube.com/watch?v=1i04-A7kfFI&t=4s (Redux toolkit crash course | Chai aur React Series)
 
 Terminal :-
 $ node -v
