@@ -3,6 +3,11 @@ Alternative to useContext
 To avoid prop drilling, i.e. passing data to nested components..
 When to use Redux, if our state is being used in multiple components
 
+UseCase :-
+
+1. When is data is being used in multiple components
+2. Fine_grain control in debugging, we can timetravel in Rdeux Dev Tool
+
 // ------------------------------------------------------------------------
 For reduxStore :-
 // ------------------------------------------------------------------------
