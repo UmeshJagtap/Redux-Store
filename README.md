@@ -8,15 +8,15 @@ Tools: React, Vite, Redux, Material UI
 reduxStore :-
 Ecommerce Cart website with FakeStore API, eComm Store with Redux Toolkit
 Technicals: Consists of Home with Products and Cart to track the shopping list with remove product option.
-Tools: React, Vite, Redux, Fakestore API
+Tools: React, Vite, Redux-Toolkit, Fakestore API, ApiDataFecthing splitted to productSlice.
 
 reduxTodo :-
 Basic Todo with react-redux
-Tools: React, Vite, Redux
+Tools: React, Vite, Redux-Toolkit
 
 reduxToolkit-Simple Counter :-
 Simple Counter app using react-redux
-Tools: React, Vite, Redux
+Tools: React, Vite, Redux-Toolkit
 
 zustand :-
 One of the other ways of central state management for React
