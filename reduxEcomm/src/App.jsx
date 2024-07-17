@@ -10,6 +10,12 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+        crossOrigin="anonymous"
+      ></link>
       <Header />
       <Routes>
         <Route path="/" element={<Cards />} />
