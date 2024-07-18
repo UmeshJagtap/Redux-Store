@@ -12,3 +12,5 @@ https://www.youtube.com/watch?v=1i04-A7kfFI&t=4s
 https://github.com/hiteshchoudhary?tab=repositories
 https://github.com/hiteshchoudhary/chai-aur-react
 https://github.com/hiteshchoudhary/chai-aur-react/tree/main/reduxToolkitTodo
+
+Tailwind Installation :-

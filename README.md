@@ -12,7 +12,7 @@ Tools: React, Vite, Redux-Toolkit, Fakestore API, ApiDataFecthing splitted to pr
 
 reduxTodo :-
 Basic Todo with react-redux
-Tools: React, Vite, Redux-Toolkit
+Tools: React, Vite, Redux-Toolkit, Tailwind
 
 reduxToolkit-Simple Counter :-
 Simple Counter app using react-redux
