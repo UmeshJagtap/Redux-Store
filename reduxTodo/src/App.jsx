@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -29,10 +29,11 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
       <hr />
       <div>
-        <h1>Learn about redux toolkit</h1>
+        <h1 className="m-2 text-xl">Learn about redux toolkit</h1>
+        <hr />
         <AddTodo />
         <Todos />
       </div>

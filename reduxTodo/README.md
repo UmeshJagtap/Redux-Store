@@ -14,3 +14,13 @@ https://github.com/hiteshchoudhary/chai-aur-react
 https://github.com/hiteshchoudhary/chai-aur-react/tree/main/reduxToolkitTodo
 
 Tailwind Installation :-
+https://tailwindcss.com/docs/installation
+https://tailwindcss.com/docs/guides/vite
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+In tailwind.config.js, replace as below
+content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+In index.css file add below,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

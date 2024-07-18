@@ -26,7 +26,7 @@ function Todos() {
 
   return (
     <>
-      <div>Todos</div>
+      <div className="m-4 text-lg">Todos</div>
       <ul className="list-none">
         {todos.map((todo) => (
           <li
