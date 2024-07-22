@@ -8,7 +8,7 @@ const CardDetails = () => {
     <>
       <div className="container mt-2">
         <h2 className="text-center">Items Details Page</h2>
-        <section className="container mt-3">
+        <section className="container mt-3 text-left">
           <div className="iteamsdetails">
             <div className="items_img">
               <img
