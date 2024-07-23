@@ -20,3 +20,8 @@ Tools: React, Vite, Redux-Toolkit
 
 zustand :-
 One of the other ways of central state management for React
+
+// Other eComm
+
+Full Stack Food Delivery App - React Redux Reducer, Firebase | For Beginners
+https://www.youtube.com/watch?v=kmU7uX3ZHJc, https://drive.google.com/drive/folders/1UgiyPOZLfrP2GR8OmB8NAszffMKAO8ZN
