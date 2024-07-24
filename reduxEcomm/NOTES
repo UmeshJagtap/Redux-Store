@@ -24,3 +24,5 @@ https://mui.com/material-ui/react-badge/
 
 npm i -D react-router-dom
 npm i -D react-router-dom@latest
+
+$ npm i redux react-redux
