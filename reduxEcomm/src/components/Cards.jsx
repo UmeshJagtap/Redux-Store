@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
+import './style.css';
 
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-
 import CardsData from './CardsData';
 
-import './style.css';
-
 import { useDispatch } from 'react-redux';
+import { ADD } from '../redux/actions/action';
 
 const Cards = () => {
   const [data, setData] = useState(CardsData);
@@ -19,7 +18,8 @@ const Cards = () => {
   const dispatch = useDispatch();
 
   const send = (e) => {
-    console.log(e);
+    // console.log(e);
+    dispatch(ADD(e));
   };
 
   return (

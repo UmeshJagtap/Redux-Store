@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,13 +11,14 @@ import MenuItem from '@mui/material/MenuItem';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-export default function ColorSchemesExample() {
+export default function Header() {
   function handleCart() {
     console.log('Handling Cart Now');
   }
 
-  const getdata = useSelector((state) => state.cartreducer);
+  const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
+
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
