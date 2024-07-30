@@ -11,12 +11,15 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 export default function ColorSchemesExample() {
   function handleCart() {
     console.log('Handling Cart Now');
   }
 
+  const getdata = useSelector((state) => state.cartreducer);
+  console.log(getdata);
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {

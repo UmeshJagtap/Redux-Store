@@ -7,12 +7,21 @@ import CardsData from './CardsData';
 
 import './style.css';
 
+import { useDispatch } from 'react-redux';
+
 const Cards = () => {
   const [data, setData] = useState(CardsData);
   //   console.log(data);
-  const handleAdd = (e) => {
-    console.log(e.target.name);
+  // const handleAdd = (e) => {
+  //   console.log(e.target.name);
+  // };
+
+  const dispatch = useDispatch();
+
+  const send = (e) => {
+    console.log(e);
   };
+
   return (
     <div className="container mt-3">
       <h2 className="text-center p-2">Add to Cart Project</h2>
@@ -40,7 +49,7 @@ const Cards = () => {
                 <Button
                   variant="primary"
                   className="col-lg-12"
-                  onClick={handleAdd}
+                  onClick={() => send(element)}
                 >
                   Add to Cart
                 </Button>
