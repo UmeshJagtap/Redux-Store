@@ -1,9 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
+import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 // http://localhost:5173/cart
 
 const CardDetails = () => {
+  const [data, setData] = useState([]);
+  // console.log(data);
+
+  const { id } = useParams();
+  // console.log(id);
+
+  const getdata = useSelector((state) => state.cartreducer.carts);
+  // console.log(getdata);
+
+  const compare = () => {
+    let comparedata = getdata.filter((e) => {
+      return e.id == id; // e.id will get all the data
+    });
+    // console.log(comparedata);
+    setData(comparedata);
+  };
+
+  useEffect(() => {
+    compare();
+  }, [id]);
+
   return (
     <>
       <div className="container mt-2">
