@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Table from 'react-bootstrap/esm/Table';
 
 import Badge from '@mui/material/Badge';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import Table from '@mui/material/Table';
 
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -88,11 +88,13 @@ export default function Header() {
                       <>
                         <tr key={e.id}>
                           <td>
-                            <img
-                              src={e.imgdata}
-                              style={{ width: '5rem', height: '5rem' }}
-                              alt=""
-                            />
+                            <NavLink to={`/cart/${e.id}`}>
+                              <img
+                                src={e.imgdata}
+                                style={{ width: '5rem', height: '5rem' }}
+                                alt={e.rname}
+                              />
+                            </NavLink>
                           </td>
                           <td>
                             <p>{e.rname}</p>
