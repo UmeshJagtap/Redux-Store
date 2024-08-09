@@ -224,6 +224,8 @@ export default function App1() {
 //-------------------------------------------------------------------------------------------
 //  2. Redux - Complete Tutorial (with Redux Toolkit) -https://www.youtube.com/watch?v=5yEG6GhoJBs
 //-------------------------------------------------------------------------------------------
+// **Counter with TypeScript **
+
 // Anoter react-redux example :-
 // -(https://stackblitz.com/edit/base-react-tailwind-4bkpca?file=Ref.js,src%2Fstate%2Fstore.ts,src%2Fstate%2Fcounter%2FcounterSlice.ts,src%2Fcomponents%2FCounter.tsx,src%2Fmain.tsx,src%2Findex.js)
 

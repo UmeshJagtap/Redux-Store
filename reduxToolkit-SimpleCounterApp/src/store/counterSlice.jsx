@@ -17,7 +17,7 @@ export const counterSlice = createSlice({
       state.count = state.count * 2;
     },
     reset: (state) => {
-      state.count = 1;
+      state.count = 0;
     },
   },
 });
