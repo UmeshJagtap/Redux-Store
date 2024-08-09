@@ -10,13 +10,16 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
 import { NavLink } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { DEL } from '../redux/actions/action';
 
 export default function Header() {
   function handleCart() {
     console.log('Handling Cart Now');
   }
 
+  const dispatch = useDispatch();
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
 
@@ -27,6 +30,10 @@ export default function Header() {
   };
   const handleClose = () => {
     setAnchorEl(null);
+  };
+
+  const dlt = (id) => {
+    dispatch(DEL(id));
   };
   return (
     <>
@@ -85,48 +92,49 @@ export default function Header() {
                 <tbody>
                   {getdata.map((e) => {
                     return (
-                      <>
-                        <tr key={e.id}>
-                          <td>
-                            <NavLink to={`/cart/${e.id}`} onClick={handleClose}>
-                              <img
-                                src={e.imgdata}
-                                style={{ width: '5rem', height: '5rem' }}
-                                alt={e.rname}
-                              />
-                            </NavLink>
-                          </td>
-                          <td>
-                            <p>{e.rname}</p>
-                            <p>Price: ₹ {e.price}</p>
-                            <p>Quantity: {e.qnty}</p>
-                            <p
-                              style={{
-                                color: 'red',
-                                fontSize: 20,
-                                cursor: 'pointer',
-                              }}
-                            >
-                              <i className="fas fa-trash smalltrash"></i>
-                            </p>
-                          </td>
-                          <td
-                            className="mt-5"
+                      <tr key={e.id}>
+                        <td>
+                          <NavLink to={`/cart/${e.id}`} onClick={handleClose}>
+                            <img
+                              src={e.imgdata}
+                              style={{ width: '5rem', height: '5rem' }}
+                              alt={e.rname}
+                            />
+                          </NavLink>
+                        </td>
+                        <td>
+                          <p>{e.rname}</p>
+                          <p>Price: ₹ {e.price}</p>
+                          <p>Quantity: {e.qnty}</p>
+                          <p
                             style={{
                               color: 'red',
                               fontSize: 20,
                               cursor: 'pointer',
                             }}
+                            onClick={() => dlt(e.id)}
                           >
-                            <i className="fas fa-trash largetrash"></i>
-                          </td>
-                        </tr>
-                      </>
+                            <i className="fas fa-trash smalltrash"></i>
+                          </p>
+                        </td>
+                        <td
+                          className="mt-5"
+                          style={{
+                            color: 'red',
+                            fontSize: 20,
+                            cursor: 'pointer',
+                          }}
+                          onClick={() => dlt(e.id)}
+                        >
+                          <i className="fas fa-trash largetrash"></i>
+                        </td>
+                      </tr>
                     );
                   })}
-                  <p className="text-center">Total : ₹ 300</p>
                 </tbody>
               </Table>
+              <hr />
+              <p className="text-center">Total : ₹ 300</p>
             </div>
           ) : (
             <div
