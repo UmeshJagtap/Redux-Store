@@ -88,7 +88,7 @@ export default function Header() {
                       <>
                         <tr key={e.id}>
                           <td>
-                            <NavLink to={`/cart/${e.id}`}>
+                            <NavLink to={`/cart/${e.id}`} onClick={handleClose}>
                               <img
                                 src={e.imgdata}
                                 style={{ width: '5rem', height: '5rem' }}
