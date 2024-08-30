@@ -1,0 +1,36 @@
+
+// Zustand -(global state management in React) 
+
+// Install zustand 
+npm install zustand
+
+// Create a store to manage your state
+import { create } from "zustand";
+
+const useCountStore = create((set) => ({
+  firstCount: 0;
+  secondCount: 0,
+  incrementFirstCount: () => 
+    set((state) => ({ firstCount: state.firstCount + 1})),
+  decrementFirstCount: () => 
+    set((state) => ({ firstCount: state.firstCount - 1})),
+  incrementSecondCount: () => 
+    set((state) => ({ secondCount: state.secondCount + 1})),
+  decrementSecondCount: () => 
+    set((state) => ({ secondCount: state.secondCount - 1})),
+}))
+
+// Create a custom hook, useFirstCount
+export const useFirstCount = () => useCountStore((state) => state.firstCount)
+
+// using the use custom hook
+const firstCount = useFirstCount();
+
+// avoid using below, -can cause unnecessary renders
+const { firstCount } = useCountStore();
+
+
+// Zustand helps developers focus more on building features and less on managing state intricacies.
+// Ref :- https://docs.pmnd.rs/zustand/getting-started/introduction
+
+// --------------------- TRY IT --------------------------
