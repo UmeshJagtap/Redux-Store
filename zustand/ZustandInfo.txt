@@ -1,6 +1,7 @@
-// --------------------------------------------------------------
 
 // Zustand -(global state management in React)
+
+// --------------------------------------------------------------
 
 // Install zustand
 // npm install zustand
