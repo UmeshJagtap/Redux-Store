@@ -13,8 +13,18 @@ export default function Counter() {
     <div>
       <h2>Redux Counter </h2>
       <p>Count: {count}</p>
-      <button onClick={() => dispatch(decrement())}>Decrement</button>
-      <button onClick={() => dispatch(increment())}>Increment</button>
+      <button
+        className="bg-red-500 text-white"
+        onClick={() => dispatch(decrement())}
+      >
+        Decrement
+      </button>
+      <button
+        className="bg-green-500 text-white"
+        onClick={() => dispatch(increment())}
+      >
+        Increment
+      </button>
     </div>
   );
 }
