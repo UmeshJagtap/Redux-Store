@@ -1,5 +1,8 @@
 # REDUX-STORE
 
+my-next-redux-app :-
+ReduxCounter, nextjs, typescript, redux
+
 reduxEcomm :-
 Ecommerce Cart website for various Food items like VadaPaav, Pizza, PaaniPuri...
 Technicals: Consists of Home with Food items, Item details Page and Cart to track the shopping list.
