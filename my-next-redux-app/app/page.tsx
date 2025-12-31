@@ -13,10 +13,10 @@ export default function Home() {
           priority
         />
         <a
-          className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
+          className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-50"
           href="/counter"
-          target="_blank"
-          rel="noopener noreferrer"
+          // target="_blank"
+          // rel="noopener noreferrer"
         >
           <Image
             className="dark:invert"
@@ -25,7 +25,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Redux-Counter
+          <p>Redux-Counter</p>
         </a>
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
