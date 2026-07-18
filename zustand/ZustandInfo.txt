@@ -96,6 +96,8 @@ export default function Counter() {
 }
 
 
+// Stop Using Context in React - Use This Instead >> https://www.youtube.com/watch?v=ULS7LHNScHc
+
 
 
 REFS :-
